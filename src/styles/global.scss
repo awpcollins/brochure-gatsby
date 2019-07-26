@@ -1,0 +1,28 @@
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+// @import 'button';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 43%;
+		overflow-x: hidden;
+		margin: 1rem;
+}
+
+body {
+  box-sizing: border-box;
+  color: $color-grey-dark;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
